@@ -32,6 +32,8 @@ gem 'thor', '~> 0.19.4'
 gem 'openssl', '~> 2.0', '>= 2.0.3'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'milia', '~> 1.3', '>= 1.3.1'
+gem 'twitter-bootstrap-rails', '~> 4.0'
+gem 'devise-bootstrap-views', '~> 0.0.10'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
