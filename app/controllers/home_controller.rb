@@ -6,11 +6,12 @@ class HomeController < ApplicationController
       if session[:tenant_id]
         Tenant.set_current_tenant session[:tenant_id]
       else
-        Tenamt.set_current_tenant current_user.tenants.first
+        Tenant.set_current_tenant current_user.tenants.first
       end
 
       @tenant = Tenant.current_tenant
       params[:tenant_id] = @tenant.id
+      @projects = Project.by_plan_and_tenant(@tenant.id)
     end
   end
 end

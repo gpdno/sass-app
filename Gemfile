@@ -34,6 +34,7 @@ gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'milia', '~> 1.3', '>= 1.3.1'
 gem 'twitter-bootstrap-rails', '~> 4.0'
 gem 'devise-bootstrap-views', '~> 0.0.10'
+gem 'bootstrap-datepicker-rails', '~> 1.6', '>= 1.6.4.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
