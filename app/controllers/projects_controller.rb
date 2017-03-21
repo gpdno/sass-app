@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
   before_action :set_tenant, only: [:show, :edit, :update, :destroy, :new, :create]
   before_action :verify_tenant
 
+
   def index
     @projects = Project.all
   end
